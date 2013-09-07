@@ -1,0 +1,4 @@
+[
+	{ "keys": ["alt+w"], "command": "symfony"},
+	{ "keys": ["alt+q"], "command": "symfony_execute"} 
+]

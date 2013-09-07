@@ -1,0 +1,34 @@
+[{
+  "caption": "Tools",
+  "mnemonic": "t",
+  "id": "tools",
+  "children": 
+    [{
+    "id": "symfonymenu",
+    "caption": "symfony",
+    "children": [
+        {
+            "caption": "Symfony cli",
+            "command": "symfony_execute"
+        },{ "caption": "-" }
+        ,{
+            "caption": "Propel build schema",
+            "command": "symfony_execute_propel_build_schema"
+        },{
+            "caption": "Propel build classes",
+            "command": "symfony_execute_propel_build_classes"
+        }
+        ,{ "caption": "-" }
+        ,{
+            "caption": "Publish asserts",
+            "command": "symfony_execute_publish_asserts"
+        }
+        ,{ "caption": "-" }
+        ,{
+            "caption": "Flush symfony Cache",
+            "command": "symfony_execute",
+            "args": {"command": "cache:clear"}
+        }       
+    ]
+    }]
+}]

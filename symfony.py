@@ -86,7 +86,7 @@ class SymfonyExecuteCommand(SymfonyCommand):
 class SymfonyExecutePropelBuildSchemaCommand(SymfonyCommand):
 	def run(self, edit, command = ""):
 		if command == "":
-			self.view.window().show_input_panel("Propel connection:", "cbm_", self.on_done, None, None)
+			self.view.window().show_input_panel("Propel connection:", "", self.on_done, None, None)
 		else:
 			result = self.callSymfony("propel:build-schema --connection=\""+text+"\"")
 			self.output(result)
@@ -98,7 +98,7 @@ class SymfonyExecutePropelBuildSchemaCommand(SymfonyCommand):
 class SymfonyExecutePropelBuildClassesCommand(SymfonyCommand):
 	def run(self, edit, command = ""):
 		if command == "":
-			self.view.window().show_input_panel("Propel connection:", "cbm_", self.on_done, None, None)
+			self.view.window().show_input_panel("Propel connection:", "", self.on_done, None, None)
 		else:
 			result = self.callSymfony("propel:build --all-classes --connection=\""+text+"\"")
 			self.output(result)
